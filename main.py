@@ -1,14 +1,15 @@
 #!/usr/bin/env pybricks-micropython
 import logging
-import eu.jeroenweijers.ev3.linebot as bot
 
-# This program requires LEGO EV3 MicroPython v2.0 or higher.
+from pybricks.parameters import Port
+from eu.jeroenweijers.ev3.linebot import LineBot
 
 
 def main():
     logging.basicConfig(filename='myapp.log', level=logging.DEBUG)
     logging.info('Started')
-    bot.start()
+    robot = LineBot(Port.C, Port.B, Port.S3, Port.S4)
+    robot.start()
     logging.info('Finished')
 
 if __name__ == '__main__':

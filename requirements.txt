@@ -1,0 +1,1 @@
+pybricks @ git+https://github.com/pybricks/pybricks-api@84b882f8b83844cd0596ead13862612fc11d1de9
